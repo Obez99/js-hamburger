@@ -5,11 +5,13 @@ const hamburgerMenu = document.querySelector(".hamburger-menu");
 hamburgerBtn.addEventListener('click',
 
 function(){
-  hamburgerMenu.style.display = "block";
+ // hamburgerMenu.style.display = "block";
+ hamburgerMenu.classList.add("active");
 })
 
 hamburgerClose.addEventListener('click',
 
 function(){
-  hamburgerMenu.style.display = "none";
+  //hamburgerMenu.style.display = "none";
+  hamburgerMenu.classList.remove("active");
 })
